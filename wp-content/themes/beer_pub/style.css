@@ -1,0 +1,53 @@
+/*
+Theme Name: beer_pub
+Theme URI: https://www.template.net/pro/wordpress-themes
+Description: beer_pub WordPress Theme.
+Version: 1.0
+License: Template.net
+License URI: https://www.template.net/license-agreement
+Author: Template.net
+Tags: one-column, two-columns, right-sidebar, rtl-language-support, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
+Text Domain: beer_pub
+*/
+.blog .header,.single-post .header {position: relative;}
+.author-info-wrapper {display:flex;}
+.blog-post-list .item-post:nth-child(2n+2) .left-content ul.social-share {top: 0;}
+.blog-post-list .item-post .author-share .author {padding: 13.5px 67px;}
+.blog .wrap-header-slide,.single-post .wrap-header-slide {display:none;}
+.content-blog>:not(.full-image):not(blockquote) {width:100%;}
+.single .top-blog {max-width:100%;}
+@media (max-width: 768px) {
+.header .header-top ul li .wrap-header-info P {
+    display: none!important;
+}
+.header .header-top ul {
+	margin: 25px auto 0;
+}
+}
+@media (max-width: 570px) {
+#about-us .au-read-more a {
+	padding: 12px 35px;
+}	
+.header .header-top {
+	padding-bottom:0;
+}
+.page-title {
+	font-size: 34px;
+	margin-bottom: 30px;
+}
+.blog-post-list .item-post .right-content .wrap .meta span {
+	padding: 11.5px 19.5px;
+}
+.blog-post-list .item-post .author-share .author {
+    padding: 9.5px 16px;
+}
+.blog-post-list .item-post .author-share ul.social-share a {
+	padding: 14px 4px;
+}
+.blog-post-list .right-content p.desc {
+	font-size: 15px;
+	line-height:28px;
+}
+.blog-post-list .item-post:nth-child(odd):after {display:none;}
+.blog-post-list .item-post:nth-child(2n+2):after {display:none;}
+}

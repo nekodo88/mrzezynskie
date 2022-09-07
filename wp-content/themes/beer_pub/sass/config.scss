@@ -1,0 +1,138 @@
+//variable
+//font
+$first-font : 'Life Savers', cursive;
+$family-font: "Font Awesome 5 Free";
+$second-font: 'Staatliches', cursive;
+$third-font: 'Lily Script One', cursive;
+$fourth-font: 'Libre Baskerville', serif;
+$default-font: 'Open Sans', sans-serif;
+//color
+$main-text-color: #ffffff;
+$second-text-color: #000000;
+$third-text-color: #603913;
+$header-menu-bg-color: #261b10;
+$separate-bg-color: #9fcb39;
+$link-bg-color: #834408;
+$brewery-active-text-color: #cfa27b;
+$rate-bg-color: #faf1e6;
+$beer-price-color: #9e0b0f;
+$rate-name-color: #824308;
+$blog-date-color: #452608;
+$blog-border-color: #f4e8d8;
+$blog-active-bg-color: #faf1e6;
+$blog-active-border-color: #e9d2b2;
+$blog-bg-color: #fcf8f2;
+$blog-content-text-color: #77604a;
+$contact-inner-bg-color: #714f2d;
+$footer-bg-color: #362f2d;
+
+
+
+body{
+  font-family: $default-font;
+}
+
+a:hover{
+  opacity: 0.8;
+  transition: 0.7s all;
+}
+h3{
+  font-family: $third-font;
+  font-size: 48px;
+  color: $third-text-color;
+  @media (max-width: 767px){
+    font-size: 25px;
+  }
+}
+.title-content{
+  p{
+    font-size: 20px;
+    color: $third-text-color;
+    @media (max-width: 767px){
+      font-size: 16px;
+    }
+
+  }
+}
+.mega-menu{
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 10px 23px;
+      padding-right: 36px;
+      &:after {
+        position: absolute;
+        content: '~';
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        color: $separate-bg-color;
+        font-size: 24px;
+      }
+    }
+  }
+  li:last-child{
+    a {
+      padding-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+  li:first-child{
+    a{
+      padding-left: 0;
+    }
+  }
+}
+@media (max-width: 991px){
+  .mega-menu{
+    width: auto;
+    text-align: center;
+    li{
+      display: block;
+
+      a{
+        padding: 0;
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px){
+  .text-mobile-center{
+  text-align: center;
+}
+}
+.wrap-header-slide{
+  margin-top: 0 !important;
+}
+.hesperiden {
+  .tp-bullet {
+    background: #fff;
+    border: none;
+    width: 75px;
+    height: 15px;
+    border-radius: 0;
+    @media (max-width: 480px){
+      display: none !important;
+    }
+    &.selected{
+      background: #9fcb39 !important;
+    }
+    &:hover{
+      background: #9fcb39 !important;
+    }
+  }
+
+}
