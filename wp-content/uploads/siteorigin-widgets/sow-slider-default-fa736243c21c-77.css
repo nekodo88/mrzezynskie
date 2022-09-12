@@ -1,0 +1,56 @@
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+  
+  display: flex;
+  align-items: center;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper .sow-slider-image-foreground-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-slider-base .sow-slider-pagination li a {
+  background: #ffffff;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-slider-base .sow-slide-nav {
+  font-size: 25px;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-slider-base .sow-slide-nav a {
+  color: #ffffff;
+}
+@font-face {
+  font-family: 'so-slider-volume-controls';
+  src: url('/wp-content/plugins/so-widgets-bundle/css/slider/fonts/volume-controls.eot?aieqpp#iefix') format('embedded-opentype'), url('/wp-content/plugins/so-widgets-bundle/css/slider/fonts/volume-controls.ttf?aieqpp') format('truetype'), url('/wp-content/plugins/so-widgets-bundle/css/slider/fonts/volume-controls.woff?aieqpp') format('woff'), url('/wp-content/plugins/so-widgets-bundle/css/slider/fonts/volume-controls.svg?aieqpp#so') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound {
+  position: absolute;
+  z-index: 101;
+  right: 8px;
+  bottom: 11px;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound::before {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  color: #fff;
+  content: "\e900";
+  cursor: pointer;
+  font-family: 'so-slider-volume-controls';
+  font-size: 20px;
+  padding: 10px;
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound:hover::before,
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound:focus::before {
+  content: "\e901";
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound.sow-player-unmuted:hover::before,
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound.sow-player-unmuted:focus::before {
+  content: "\e901";
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound.sow-player-unmuted::before {
+  content: "\e901";
+}
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound.sow-player-unmuted:hover::before,
+.so-widget-sow-slider-default-fa736243c21c-77 .sow-player-controls-sound.sow-player-unmuted:focus::before {
+  content: "\e900";
+}
