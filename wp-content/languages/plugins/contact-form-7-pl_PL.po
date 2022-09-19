@@ -2,14 +2,67 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-04-19 07:58:14+0000\n"
+"PO-Revision-Date: 2022-09-16 16:20:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-alpha.2\n"
 "Language: pl\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: includes/config-validator.php:634
+msgid "Uploadable file size exceeds PHP’s maximum acceptable size."
+msgstr "Rozmiar przesyłanego pliku przekracza maksymalny dopuszczalny rozmiar PHP."
+
+#: includes/config-validator.php:583
+msgid "Colons are used in form-tag names."
+msgstr "Dwukropki są używane w nazwach tagów formularzy."
+
+#: modules/text.php:204
+msgid "Please enter a telephone number."
+msgstr "Proszę podać numer telefonu."
+
+#: modules/text.php:197
+msgid "Please enter a URL."
+msgstr "Proszę wprowadzić adres URL."
+
+#: modules/text.php:190
+msgid "Please enter an email address."
+msgstr "Proszę wpisać adres e-mail."
+
+#: modules/number.php:195
+msgid "This field has a too large number."
+msgstr "Za duża liczba."
+
+#: modules/number.php:190
+msgid "This field has a too small number."
+msgstr "Za mała liczba."
+
+#: modules/number.php:185
+msgid "Please enter a number."
+msgstr "Wprowadź liczbę."
+
+#: modules/date.php:167
+msgid "Please enter a date in YYYY-MM-DD format."
+msgstr "Wprowadź datę w formacie RRRR-MM-DD."
+
+#: includes/rest-api.php:333
+msgid "The request payload format is not supported."
+msgstr "Payload żądania nie jest obsługiwany."
+
+#. translators: 1: WordPress hook name, 2: version number
+#: includes/functions.php:608
+msgid "Hook %1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s with no alternative available."
+msgstr "Hook z %1$s uznawany jest za <strong>przestarzały</strong> od wersji %2$s Contact Form 7 i nie ma żadnej alternatywy."
+
+#: includes/file.php:111
+msgid "The uploaded file is too large."
+msgstr "Przesłany plik jest za duży."
+
+#: includes/contact-form-template.php:201
+msgid "Please fill out this field."
+msgstr "Proszę wypełnić to pole."
 
 #. translators: 1: PHP function name, 2: version number, 3: alternative
 #. function name
@@ -420,6 +473,10 @@ msgstr "reCAPTCHA chroni przed spamem i różnymi rodzajami automatycznych nadu�
 msgid "reCAPTCHA (v3)"
 msgstr "reCAPTCHA (v3)"
 
+#: modules/recaptcha/recaptcha.php:255
+msgid "API keys for reCAPTCHA v3 are different from those for v2; keys for v2 do not work with the v3 API. You need to register your sites again to get new keys for v3. For details, see %s."
+msgstr "Klucze API dla reCAPTCHA v3 różnią się od kluczy dla v2; Klucze v2 nie działają z API v3. Proszę ponownie zarejestrować swoją witrynę i uzyskać klucze v3. Więcej informacje można znaleźć: %s."
+
 #: modules/constant-contact/service.php:459
 msgid "Connect to the Constant Contact API"
 msgstr "Połącz się ze stałym interfejsem API"
@@ -709,6 +766,10 @@ msgstr "Flamingo"
 msgid "Install a message storage plugin before this happens to you. %s saves all messages through contact forms into the database. Flamingo is a free WordPress plugin created by the same author as Contact Form 7."
 msgstr "Zainstaluj wtyczkę, która zapisuje wszystkie wiadomości do bazy danych. %s zapisuje przesłane wiadomości do bazy danych. Flamingo jest darmową wtyczką stworzoną przez autora, który stworzył również CF7."
 
+#: admin/includes/welcome-panel.php:120
+msgid "Contact Form 7 does not store submitted messages anywhere. Therefore, you may lose important messages forever if your mail server has issues or you make a mistake in mail configuration."
+msgstr "CF7 nie zapisuje nigdzie wysłanych wiadomości. Pamiętaj o tym, ponieważ można stracić ważne wiadomości w przypadku, kiedy źle zostanie skonfigurowana poczta e-mail."
+
 #: admin/includes/welcome-panel.php:114
 msgid "Before you cry over spilt mail&#8230;"
 msgstr "Zanim zaczniesz płakać nad rozlanym mailem&#8230;"
@@ -722,6 +783,10 @@ msgstr "https://contactform7.com/comment-blacklist/"
 #: admin/includes/welcome-panel.php:58
 msgid "Contact Form 7 supports spam-filtering with %1$s. Intelligent %2$s blocks annoying spambots. Plus, using %3$s, you can block messages containing specified keywords or those sent from specified IP addresses."
 msgstr "CF7 wspiera filtrowanie spamu przy pomocy %1$s. Inteligentny %2$s blokuje spamboty. Dodatkowo, używając %3$s, możesz zablokować wiadomości zawierające wybrane słowa kluczowe lub wiadomości wysłane z wybranych adresów IP."
+
+#: admin/includes/welcome-panel.php:55
+msgid "Spammers target everything; your contact forms are not an exception. Before you get spammed, protect your contact forms with the powerful anti-spam features Contact Form 7 provides."
+msgstr "Spamerzy biorą wszystko na celownik, formularze kontaktowe nie są wyjątkiem. Zabezpiecz się odpowiednimi funkcjonalnościami antyspamowymi od CF7."
 
 #: admin/includes/welcome-panel.php:49
 msgid "Getting spammed? You have protection."
@@ -1007,6 +1072,10 @@ msgstr "Generuj znacznik formularza dla pola wprowadzania par pytań i odpowiedz
 #: modules/quiz.php:215
 msgid "quiz"
 msgstr "quiz"
+
+#: modules/quiz.php:199
+msgid "Sender does not enter the correct answer to the quiz"
+msgstr "Nie udzielono poprawnej odpowiedzi na quiz"
 
 #: modules/number.php:233
 msgid "Slider"
@@ -1396,9 +1465,17 @@ msgstr "Możliwe, że przed użyciem usługmi będziesz musiał stworzyć w niej
 msgid "On this screen, you can manage services that are available through Contact Form 7. Using API will allow you to collaborate with any services that are available."
 msgstr "Na tym ekranie możesz zarządzać usługami, które dostępne są za pośrednictwem wtyczki Contact Form 7. Za sprawą API będziesz mógł połączyć się z różnymi dostępnymi usługami."
 
+#: admin/includes/help-tabs.php:85
+msgid "There are also special mail-tags that have specific names, but do not have corresponding form-tags. They are used to represent meta information of form submissions like the submitter&#8217;s IP address or the URL of the page."
+msgstr "Istnieją także specjalne znaczniki wiadomości e-mail, które mają swoje nazwy, ale nie mają odpowiadających im znaczników formularza. Używa się ich do dodawania do listów informacji o wysyłanym formularzu, takich jak adres IP użytkownika wysyłającego formularz lub adres URL podstrony, z której formularz został wysłany."
+
 #: admin/includes/help-tabs.php:84
 msgid "A mail-tag is also a short code enclosed in square brackets that you can use in every Mail and Mail (2) field. A mail-tag represents a user input value through an input field of a corresponding form-tag."
 msgstr "Znaczniki emailów również są kodami skrótowymi, zamkniętymi w nawiasy prostokątne. Możesz ihc używać w polach treści Email oraz Email (2). Znacznik emaila zostanie przy wysyłaniu listu zamieniony na wartość wprowadzoną przez wypełniającego formularz do pola stworzonego przez odpowiadający znacznika formularza."
+
+#: admin/includes/help-tabs.php:82
+msgid "While form-tags have a comparatively complex syntax, you do not need to know the syntax to add form-tags because you can use the straightforward tag generator (<strong>Generate Tag</strong> button on this screen)."
+msgstr "Znaczniki formularzy mają dosyć złożoną budowę, ale na szczęście nie musisz ich znać, żeby używać. Wystarczy, że posłużyć się prostym generatorem znaczników (przycisk <strong>Generowania znaczników</strong> na tym ekranie)."
 
 #: admin/includes/help-tabs.php:81
 msgid "A form-tag is a short code enclosed in square brackets used in a form content. A form-tag generally represents an input field, and its components can be separated into four parts: type, name, options, and values. Contact Form 7 supports several types of form-tags including text fields, number fields, date fields, checkboxes, radio buttons, menus, file-uploading fields, CAPTCHAs, and quiz fields."
