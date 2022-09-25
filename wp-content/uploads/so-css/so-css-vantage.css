@@ -1,3 +1,38 @@
 #main { 
 		padding: 0px;
 }
+.age-gate input[type=text].age-gate-input, .age-gate input[type=text].age-gate__input {
+    background: var(--ag-input-background-color,black);
+    border: var(--ag-input-border,3px solid white);
+    color: var(--ag-input-color,white);
+    font-size: var(--ag-input-text-size,1.8rem);
+    padding: var(--ag-input-padding,.5rem 1rem);
+    text-align: var(--ag-text-align);
+    transition: all .3s;
+    width: 100%;
+		opacity:0,7;
+}
+button.age-gate-button, button.age-gate-submit-no, button.age-gate-submit-yes, button.age-gate__button, button.age-gate__submit--no, button.age-gate__submit--yes {
+    background-color: var(--ag-button-color-background,#333);
+    /* border: var(--ag-button-border,3px solid gold); */
+    /* border-radius: var(--ag-button-radius,3px); */
+    color: var(--ag-button-color-text,black);
+    cursor: var(--ag-button-cursor,pointer);
+    font-size: var(--ag-button-size,2rem);
+    font-weight: var(--ag-button-weight,600);
+    padding: var(--ag-button-padding,1rem 3rem);
+}
+button.age-gate-button:active, button.age-gate-button:focus, button.age-gate-button:hover, button.age-gate-submit-no:active, button.age-gate-submit-no:focus, button.age-gate-submit-no:hover, button.age-gate-submit-yes:active, button.age-gate-submit-yes:focus, button.age-gate-submit-yes:hover, button.age-gate__button:active, button.age-gate__button:focus, button.age-gate__button:hover, button.age-gate__submit--no:active, button.age-gate__submit--no:focus, button.age-gate__submit--no:hover, button.age-gate__submit--yes:active, button.age-gate__submit--yes:focus, button.age-gate__submit--yes:hover {
+    background-color: var(--ag-button-color-hover,#fff);
+    border: var(--ag-button-hover-border,0);
+    color: var(--ag-button-color-text-hover,red);
+}
+.age-gate-label, .age-gate__label {
+    display: var(--ag-label-display,block);
+    margin: var(--ag-label-margin,1rem 2rem);
+}
+.age-gate-remember-text, .age-gate__remember-text {
+    font-size: var(--ag-remember-size,1.5rem);
+    font-weight: var(--ag-remember-weight,normal);
+    margin-left: var(--ag-remember-spacing,5px);
+}
